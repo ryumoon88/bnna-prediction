@@ -5,10 +5,9 @@ import numpy as np
 model = pickle.load(open('banana.pkl', 'rb'))
 
 app = Flask(__name__)
-
 @app.route('/')
 def main():
-    return render_template('index.html')
+    return render_template('index.html',)
 
 @app.route('/hasil', methods=["POST"])
 def home():
@@ -34,8 +33,6 @@ def home():
     if(pred == 1): status = "Belum Matang"
     elif(pred == 2): status = "Matang"
     else: status = "Busuk"
-
-    print(status)
 
     return render_template('result.html', data=pred, status=status)
 

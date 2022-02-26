@@ -18,6 +18,18 @@
     <title>Banana Prediction</title>
   </head>
   <body>
+    <nav class="navbar navbar-light bg-white">
+      <a class="navbar-brand" style="padding-left: 20px" href="#">
+        <img
+          src="{{ url_for('static', filename='logo.png') }}"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        BANANA PREDICTION
+      </a>
+    </nav>
     <div class="mt-5 text-center"></div>
     <h2 class="text-center">Prediction Result :</h2>
     <h3 class="text-center">{{status}}</h3>

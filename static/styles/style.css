@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control {
+  border-radius: 30px;
+  border: 1px black solid;
+}
+.text-center {
+  font-size: 40px;
+}
